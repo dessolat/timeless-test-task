@@ -1,0 +1,10 @@
+.btn {
+	padding: 10px 16px;
+	color: #CF7B5A;
+	font: 600 .875rem / 1.43 var(--main-font-family);
+	border-radius: var(--border-radius);
+
+	&:disabled {
+		color: gray;
+	}
+}

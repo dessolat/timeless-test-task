@@ -1,0 +1,17 @@
+.searchBar {
+  background-color: #1e2027;
+  color: #dcd8d3;
+  border-radius: var(--border-radius);
+  padding: 14px 16px;
+  box-shadow: 0 5px 5px black;
+  width: var(--user-card-width);
+  font: 500 1rem / 1.5 var(--main-font-family);
+
+  &::placeholder {
+    color: #8c8988;
+  }
+
+  &:focus {
+    outline: 1px solid rgba($color: #cf7b5a, $alpha: .5);
+  }
+}

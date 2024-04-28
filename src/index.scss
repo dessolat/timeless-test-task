@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --user-card-width: 20.75rem;
+  --user-card-height: 12.25rem;
+  --border-radius: 1rem;
+	--main-font-family: 'Jura', sans-serif;
+}
+
+html, body {
+	font-size: 16px;
+  font-style: normal;
+  font-family: var(--main-font-family);
+  font-optical-sizing: auto;
+	height: 100vh;
+	background-color: #12141b;
+	color: wheat;
+
+	@media screen and (max-width: 1086px) {
+		font-size: 14px;
+	}
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+button,
+input {
+  background-color: unset;
+  border: none;
+}

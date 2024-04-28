@@ -1,0 +1,102 @@
+.card {
+  width: var(--user-card-width);
+  height: var(--user-card-height);
+  background-color: #1a1c23;
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    border: 1px solid rgba($color: #cf7b5a, $alpha: 0.2);
+
+    .name {
+      color: #cf7b5a;
+    }
+
+    > .deleteBtn {
+      display: flex;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: stretch;
+  column-gap: 1rem;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.nameAndMailWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.email {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+.infoRows {
+  margin-top: 1rem;
+}
+
+.infoRow {
+  display: flex;
+  column-gap: 1rem;
+
+  + .infoRow {
+    margin-top: 0.75rem;
+  }
+}
+
+.fieldName {
+  flex: 0 0 57px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.67;
+  color: #8c8988;
+}
+
+.fieldValue {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.name, .email, .fieldValue {
+	text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+	max-width: 225px;
+}
+
+.deleteBtn {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-left: 1px solid rgba($color: #cf7b5a, $alpha: 0.2);
+  border-bottom: 1px solid rgba($color: #cf7b5a, $alpha: 0.2);
+  border-bottom-left-radius: var(--border-radius);
+	justify-content: center;
+	align-items: center;
+	background-color: #1a1c23;
+}

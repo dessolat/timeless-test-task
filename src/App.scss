@@ -1,0 +1,27 @@
+#root {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
+	max-width: 2137px;
+	
+	@media screen and (max-width: 2135px) {
+		max-width: 1789px;
+	}
+	@media screen and (max-width: 1920px) {
+		max-width: 1440px;
+	}
+	@media screen and (max-width: 1438px) {
+		max-width: 1092px;
+	}
+}
+
+.appWrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
