@@ -13,6 +13,7 @@
   --user-card-height: 12.25rem;
   --border-radius: 1rem;
 	--main-font-family: 'Jura', sans-serif;
+	--main-bg-color: #12141b
 }
 
 html, body {
@@ -21,7 +22,7 @@ html, body {
   font-family: var(--main-font-family);
   font-optical-sizing: auto;
 	height: 100vh;
-	background-color: #12141b;
+	background-color: var(--main-bg-color);
 	color: wheat;
 
 	@media screen and (max-width: 1086px) {
